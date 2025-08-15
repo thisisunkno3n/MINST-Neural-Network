@@ -22,10 +22,10 @@ X_train = X_train / 255.
 _, m_train = X_train.shape
 
 def init_params():
-    W1 = np.random.rand(10, 784) - 0.5
-    b1 = np.random.rand(10, 1) - 0.5
-    W2 = np.random.rand(10, 10) - 0.5
-    b2 = np.random.rand(10, 1) - 0.5
+    W1 = np.random.rand(10, 784) * 0.01
+    b1 = np.random.rand(10, 1)
+    W2 = np.random.rand(10, 10) * 0.01
+    b2 = np.random.rand(10, 1)
     return W1, b1, W2, b2
 
 def ReLU(Z):
@@ -92,4 +92,4 @@ def gradient_descent(X, Y, alpha, iterations):
             print(get_accuracy(predictions, Y))
     return W1, b1, W2, b2
 
-W1, b1, W2, b2 = gradient_descent(X_train, Y_train, 0.10, 500)
+W1, b1, W2, b2 = gradient_descent(X_train, Y_train, 0.1, 500)
