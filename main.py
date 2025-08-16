@@ -102,25 +102,25 @@ def gradient_descent(X, Y, alpha, iterations):
 
 W1, b1, W2, b2 = gradient_descent(X_train, Y_train, 0.1, 500)
 
-#
-#def stochastic_gradient_descent(X, Y, alpha, epochs, batch_size=64):
-#    W1, b1, W2, b2 = init_params()
-#    m = X.shape[1]
-#    for epoch in range(epochs):
-#        indices = np.random.permutation(m)
-#        for start in range(0, m, batch_size):
-#            end = min(start + batch_size, m)
-#            batch_idx = indices[start:end]
-#            x_batch = X[:, batch_idx]
-#            y_batch = Y[batch_idx]
-#            Z1, A1, Z2, A2 = forward_prop(W1, b1, W2, b2, x_batch)
-#            dW1, db1, dW2, db2 = backward_prop(Z1, A1, Z2, A2, W1, W2, x_batch, y_batch)
-#            W1, b1, W2, b2 = update_params(W1, b1, W2, b2, dW1, db1, dW2, db2, alpha)
-#        if epoch % 10 == 0:
-#            Z1, A1, Z2, A2 = forward_prop(W1, b1, W2, b2, X)
-#            predictions = get_predictions(A2)
-#            acc = get_accuracy(predictions, Y)
-#            print(f"Epoch: {epoch}, Accuracy: {acc}")
-#    return W1, b1, W2, b2
-#
-#W1, b1, W2, b2 = stochastic_gradient_descent(X_train, Y_train, 0.1, 500)
+
+# def stochastic_gradient_descent(X, Y, alpha, epochs, batch_size=64):
+#     W1, b1, W2, b2 = init_params()
+#     m = X.shape[1]
+#     for epoch in range(epochs):
+#         indices = np.random.permutation(m)
+#         for start in range(0, m, batch_size):
+#             end = min(start + batch_size, m)
+#             batch_idx = indices[start:end]
+#             x_batch = X[:, batch_idx]
+#             y_batch = Y[batch_idx]
+#             Z1, A1, Z2, A2 = forward_prop(W1, b1, W2, b2, x_batch)
+#             dW1, db1, dW2, db2 = backward_prop(Z1, A1, Z2, A2, W1, W2, x_batch, y_batch)
+#             W1, b1, W2, b2 = update_params(W1, b1, W2, b2, dW1, db1, dW2, db2, alpha)
+#         if epoch % 10 == 0:
+#             Z1, A1, Z2, A2 = forward_prop(W1, b1, W2, b2, X)
+#             predictions = get_predictions(A2)
+#             acc = get_accuracy(predictions, Y)
+#             print(f"Epoch: {epoch}, Accuracy: {acc}")
+#     return W1, b1, W2, b2
+
+# W1, b1, W2, b2 = stochastic_gradient_descent(X_train, Y_train, 0.1, 500)
