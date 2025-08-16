@@ -9,6 +9,15 @@ This project implements a basic neural network from scratch using NumPy to class
 - Hidden layer: 10 nodes with Leaky ReLU activation
 - Output layer: 10 nodes (digits 0-9) with Softmax activation
 
+## Project Structure
+
+The neural network uses:
+- **Forward Propagation**: Computes activations through the network
+- **Backward Propagation**: Computes gradients for weight updates
+- **Gradient Descent & SGD**: Updates weights to minimize loss
+- **ReLU & LeakyReLU**: Activation function for hidden layer
+- **Softmax**: Activation function for output layer
+
 ## Files
 
 - `main.py` - Main training script for the neural network
@@ -61,14 +70,6 @@ This will:
 - matplotlib (for visualization)
 - pickle (for saving/loading weights)
 
-## Project Structure
-
-The neural network uses:
-- **Forward Propagation**: Computes activations through the network
-- **Backward Propagation**: Computes gradients for weight updates
-- **Gradient Descent**: Updates weights to minimize loss
-- **Leaky ReLU**: Activation function for hidden layer
-- **Softmax**: Activation function for output layer
 
 ## Results
 
